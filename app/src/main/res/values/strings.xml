@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">仓储管理系统</string>
+    <string name="title_activity_register">用户注册</string>
+</resources>
