@@ -64,7 +64,7 @@ public class RegisterActivity extends AppCompatActivity {
         if (num > 0){
             Log.i("REG", "用户注册成功！");
             showToast("用户注册成功！");
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
             return;
         }
