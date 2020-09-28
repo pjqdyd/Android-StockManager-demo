@@ -22,7 +22,7 @@
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/log_name"
+        android:id="@+id/login_name"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginLeft="30dp"
