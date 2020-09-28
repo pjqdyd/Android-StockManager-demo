@@ -15,13 +15,12 @@
             android:label="主界面"></activity>
         <activity
             android:name=".RegisterActivity"
-            android:label="@string/title_activity_register"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:label="@string/title_activity_register">
         </activity>
+        <!--        android:theme="@style/AppTheme.NoActionBar"-->
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:label="@string/title_activity_login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
