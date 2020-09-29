@@ -14,4 +14,5 @@
         android:numColumns="3"
         android:verticalSpacing="8dp">
     </GridView>
+
 </LinearLayout>
