@@ -2,4 +2,9 @@
     <string name="app_name">仓储管理系统</string>
     <string name="title_activity_register">用户注册</string>
     <string name="title_activity_login">用户登录</string>
+    <string name="title_activity_storage">仓储入库</string>
+    <string name="title_activity_storage_out">仓储出库</string>
+    <string name="title_activity_stock_tacking">盘点功能</string>
+    <string name="title_activity_material">物料信息</string>
+    <string name="title_activity_stock_search">库存查询</string>
 </resources>

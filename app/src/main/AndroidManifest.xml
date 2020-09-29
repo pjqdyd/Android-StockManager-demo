@@ -11,13 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
-            android:label="主界面"></activity>
-        <activity
             android:name=".RegisterActivity"
-            android:label="@string/title_activity_register">
-        </activity>
-        <!--        android:theme="@style/AppTheme.NoActionBar"-->
+            android:label="@string/title_activity_register" /> <!-- android:theme="@style/AppTheme.NoActionBar" -->
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login">
@@ -27,6 +22,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="主界面" />
+        <activity
+            android:name=".StockSearchActivity"
+            android:label="@string/title_activity_stock_search"></activity>
+        <activity
+            android:name=".MaterialActivity"
+            android:label="@string/title_activity_material" />
+        <activity
+            android:name=".StockTackingActivity"
+            android:label="@string/title_activity_stock_tacking" />
+        <activity
+            android:name=".StorageOutActivity"
+            android:label="@string/title_activity_storage_out" />
+        <activity
+            android:name=".StorageActivity"
+            android:label="@string/title_activity_storage" />
     </application>
 
 </manifest>

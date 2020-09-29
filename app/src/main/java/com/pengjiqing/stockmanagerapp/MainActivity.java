@@ -2,6 +2,7 @@ package com.pengjiqing.stockmanagerapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -101,20 +102,30 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int index, long l) {
         switch (index) {
-            case 1:
+            case 0:
                 System.out.println("入库功能");
+                startActivity(new Intent(this, StorageActivity.class));
+                finish();
+                break;
+            case 1:
+                System.out.println("出库功能");
+                startActivity(new Intent(this, StorageOutActivity.class));
+                finish();
                 break;
             case 2:
-                System.out.println("出库功能");
+                System.out.println("盘点功能");
+                startActivity(new Intent(this, StockTackingActivity.class));
+                finish();
                 break;
             case 3:
-                System.out.println("盘点功能");
+                System.out.println("物料信息功能");
+                startActivity(new Intent(this, MaterialActivity.class));
+                finish();
                 break;
             case 4:
-                System.out.println("物料信息功能");
-                break;
-            case 5:
                 System.out.println("库存查询功能");
+                startActivity(new Intent(this, StockSearchActivity.class));
+                finish();
                 break;
             default:
                 break;
