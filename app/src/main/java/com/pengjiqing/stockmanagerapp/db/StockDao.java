@@ -87,4 +87,27 @@ public class StockDao {
 		}
 		return count;
 	}
+
+	public String getNameByCode(String code){
+		String name="";
+		try {
+			SQLiteDatabase db = AppApplication.helper.getReadableDatabase();
+			// 编写sql语句
+			String sql = "select * from stock where stcode='" + code + "'";
+			// 执行sql
+			Cursor cursor = db.rawQuery(sql, null);
+			if (cursor != null) {
+				if (cursor.moveToNext()) {
+					// 获取库存数量
+					name = cursor.getString(cursor
+							.getColumnIndex("stname"));
+				}
+				cursor.close();
+			}
+			// 释放资源
+			db.close();
+		} catch (Exception e) {
+		}
+		return name;
+	}
 }
